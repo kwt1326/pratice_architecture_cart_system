@@ -1,0 +1,45 @@
+@mixin flex() {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@mixin center_mid() {
+	justify-content: center;
+	-webkit-align-items: center;
+  align-items: center;
+  display: flex;
+  display: -webkit-flex;
+}
+
+@mixin align_items($value) {
+	display: -webkit-flex;
+  display: flex;
+	-webkit-align-items: $value;
+  align-items: $value;
+}
+
+@mixin justify_content($value) {
+  display: flex;
+  display: -webkit-flex;
+  justify-content: $value;
+}
+
+@mixin flex_direction($value) {
+  display: flex;
+	display: -webkit-flex;
+	-webkit-flex-direction: $value;
+  -ms-flex-direction: $value;
+  flex-direction: $value;
+}
+
+@mixin flex_wrap($value) {
+  -webkit-flex-wrap: $value;
+  -ms-flex-wrap: $value;
+  flex-wrap: $value;
+}
+
+@mixin sticky() {
+  position: -webkit-sticky;
+  position: sticky;
+}

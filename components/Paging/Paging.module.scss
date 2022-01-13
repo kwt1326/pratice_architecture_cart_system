@@ -1,0 +1,25 @@
+@import "../../styles/mixin.scss";
+
+@mixin paging_button {
+  @include center_mid();
+  width: 50px;
+  height: 50px;
+  border: 1px solid #dfdfdf;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.paging_container {
+  @include flex();
+  @include justify_content(center);
+  width: 100%;
+  margin-top: 20px;
+
+  .prev_page, .next_page, .other_page {
+    @include paging_button();
+  }
+  .current_page {
+    @include paging_button();
+    color: #ffd777;
+  }
+}

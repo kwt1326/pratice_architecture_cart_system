@@ -1,0 +1,28 @@
+@import "../../styles/mixin.scss";
+
+.header {
+  @include flex_direction(row);
+  @include justify_content(center);
+  @include align_items(center);
+  @include sticky();
+  top: 0;
+  z-index: 1;
+  height: 80px;
+  padding: 20px;
+  background-color: white;
+
+  h1 {
+    user-select: none;
+    margin: 0;
+    margin-right: 20px;
+  }
+
+  ul {
+    @include flex_direction(row);
+    
+    li {
+      cursor: pointer;
+      margin-right: 15px;
+    }
+  }
+}

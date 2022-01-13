@@ -1,0 +1,7 @@
+@import "../../styles/mixin.scss";
+
+.container {
+  @include flex_direction(column);
+  @include align_items(center);
+  padding: 20px;
+}

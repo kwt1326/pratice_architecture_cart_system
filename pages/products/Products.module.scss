@@ -1,0 +1,31 @@
+@import "../../styles/mixin.scss";
+
+.container {
+  width: 600px;
+  
+  .ul_products_wrap {
+    .li_product_item {
+      @include flex_direction(row);
+      margin-bottom: 15px;
+  
+      img {
+        width: 150px;
+        height: 150px;
+        margin-right: 15px;
+      }
+  
+      > div {
+        @include flex_direction(column);
+        @include align_items(flex-start);
+  
+        p {
+          margin-bottom: 10px;
+        }
+      }
+    }
+  }
+  
+  .btn_cart {
+    cursor: pointer;       
+  }
+}
