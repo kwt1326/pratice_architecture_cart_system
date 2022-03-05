@@ -5,7 +5,7 @@ import styles from './Header.module.scss';
 function Header() {
   return (
     <header className={styles.header}>
-      <h1>장바구니 (아키텍처 연습용)</h1>
+      <h1>장바구니</h1>
       <ul>
         <li>
           <Link href='/products'>
