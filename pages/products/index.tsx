@@ -2,7 +2,6 @@
 import React, { useEffect, useState } from 'react';
 import { GetServerSidePropsContext } from 'next';
 import { NextRouter, withRouter } from 'next/router';
-import Image from 'next/image';
 
 import { Product } from '../../core/entities';
 import { priceComma } from '../../core/utils/priceUtil';
@@ -82,11 +81,10 @@ const ProductsPresenter = (props: ComponentProps) => {
           updateList();
         }}
       >
-        <Image
+        <img
           src={imgSource}
           alt='icon_cart'
-          width={40}
-          height={40}
+          style={{ width: 40, height: 40 }}
         />
       </div>
     )
