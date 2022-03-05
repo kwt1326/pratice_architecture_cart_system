@@ -1,6 +1,6 @@
 import { NextApiRequest, NextApiResponse } from "next";
 import { ProductDtoType } from "../../core/entities/interface/product";
-import data from '../serverData/productItems';
+import data from '../../constants/serverData/productItems';
 
 export default function Products(req: NextApiRequest, res: NextApiResponse) {
   const { query } = req;
